@@ -1,24 +1,20 @@
-# Logstash filters for F5 Log Balancer logs
+# F5 Logstash filters
 
 ### Idea
 
-Send your F5 logs to an elk stack and apply these filters to retrieve all interesting fields.
+Send your F5 logs to an Elastic stack and apply filters to enable advanced analysis.
 
 ### Status
 
-In development. 
+In production. 
 
 ### How To
 
-Please check https://outsideit.net/f5-logstash-filters for more information on how to use this plugin.
+Please check https://outsideit.net/f5-logstash for more information on how to use this plugin.
 
 ### Help
 
 In case you find a bug or have a feature request, please make an issue on GitHub. 
-
-### On Nagios Exchange
-
-Not yet.
 
 ### Copyright
 
