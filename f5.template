@@ -1,0 +1,339 @@
+PUT _template/f5
+{
+  "order": 0,
+  "template": "f5-*",
+  "settings": {},
+  "mappings": {
+    "doc": {
+	  "dynamic": "false",
+	  "_all": {
+	    "enabled": false
+	  },
+	"properties": {
+	  "@timestamp": {
+		  "type": "date"
+	  },
+	  "@version": {
+		  "type": "integer"
+	  },
+      "dig_type": {
+        "type": "keyword"
+      },
+	  "host": {
+		  "type": "ip"
+	  },
+      "hostname": {
+        "type": "keyword"
+      },
+	  "logsource": {
+		  "type": "keyword"
+	  },
+	  "message": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "pid": {
+		  "type": "long"
+	  },
+	  "port": {
+		  "type": "long"
+	  },
+	  "program": {
+		  "type": "keyword"
+	  },
+	  "severity": {
+		  "type": "integer"
+	  },
+	  "tags": {
+		  "type": "keyword"
+	  },
+    "type": {
+      "type": "keyword"
+    },
+	  "f5_apd_message": {
+      "type": "text",
+        "fields": {
+          "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+          }
+      }
+	  },
+	  "f5_apd_message_id": {
+		  "type": "keyword"
+	  },
+	  "f5_apd_sequence_id": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_destination_port": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_destination_ip": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_detected_transactions": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_drop_counter": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_evasion_violation": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_event": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_geolocation": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_event": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_http_classifier": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_http_violation": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_injection_ratio": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_injection_threshold": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_legit_sessions": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_message_id": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_new_transactions": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_operation_mode": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_request": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_rest": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_route_domain": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_scheme": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_scraping_status": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_scraping_type": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_session_id": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_source_ip": {
+		  "type": "ip"
+	  },
+	  "f5_dcc_source_port": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_support_id": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_type": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_username": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_violation": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_violation_counter": {
+		  "type": "integer"
+	  },
+	  "f5_dcc_virusname": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_web_violation": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_event": {
+		  "type": "keyword"
+	  },
+	  "f5_dcc_xff_ip": {
+		  "type": "keyword"
+	  },
+	  "f5_session_id": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_auth_id": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_auth_ip": {
+		  "type": "ip"
+	  },
+	  "f5_tmm_auth_message": {
+      "type": "text",
+        "fields": {
+          "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+          }
+      }
+	  },
+	  "f5_tmm_auth_port": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_auth_type": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_auth_version": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_client_activex": {
+		  "type": "integer"
+	  },
+	  "f5_tmm_client_browser": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_client_browser_version": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_client_cpu": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_client_ip": {
+		  "type": "ip"
+	  },
+	  "f5_tmm_client_javascript": {
+		  "type": "integer"
+	  },
+	  "f5_tmm_client_platform": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_client_plugin": {
+		  "type": "integer"
+	  },
+	  "f5_tmm_client_port": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_client_ui_mode": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_event": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_message": {
+      "type": "text",
+        "fields": {
+          "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+          }
+      }
+	  },
+	  "f5_tmm_message_id": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_reputation": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_rest": {
+      "type": "text",
+        "fields": {
+          "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+          }
+      }
+	  },
+	  "f5_tmm_rule": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_rule_message": {
+      "type": "text",
+        "fields": {
+          "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+          }
+      }
+	  },
+	  "f5_tmm_sequence_id": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_server_ip": {
+		  "type": "ip"
+	  },
+	  "f5_tmm_server_port": {
+		  "type": "integer"
+	  },
+	  "f5_tmm_session_bytes_in": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_session_bytes_out": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_session_client_ip": {
+		  "type": "ip"
+	  },
+	  "f5_tmm_session_deleted_reason": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_session_listener": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_session_location": {
+		  "type": "keyword"
+	  },
+	  "f5_tmm_session_vip_ip": {
+		  "type": "ip"
+	  },
+	  "f5_tmm_type": {
+		  "type": "keyword"
+	  },
+	  "syslog_pid": {
+		  "type": "integer"
+	  },
+	  "syslog_pri": {
+		  "type": "integer"
+	  },
+	  "syslog_hostname": {
+		  "type": "keyword"
+	  },
+	  "syslog_message": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "syslog_program": {
+		  "type": "keyword"
+	  },
+	  "syslog_severity": {
+		  "type": "keyword"
+	  }
+	}
+  },
+  "_default_": {
+	  "_all": {
+	    "enabled": false
+	  }
+    }
+  },
+  "aliases": {
+    "f5": {}
+  }
+}
