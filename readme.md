@@ -2,7 +2,7 @@
 
 ### Idea
 
-Send your F5 logs to an Elastic stack and apply filters to enable advanced analysis.
+Send your F5 logs to an Elastic stack and apply filters to enable advanced analytics.
 
 ### Status
 
@@ -10,7 +10,7 @@ In production.
 
 ### How To
 
-Please check https://outsideit.net/f5-logstash for more information on how to use this plugin.
+Please check https://outsideit.net/monitoring-f5 for more information on how to use this plugin.
 
 ### Help
 
