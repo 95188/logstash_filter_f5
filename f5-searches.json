@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "net-f5",
+    "_type": "search",
+    "_source": {
+      "title": "net-f5",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "syslog_hostname",
+        "syslog_program",
+        "syslog_severity",
+        "f5_session_id",
+        "tags",
+        "syslog_message"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"f5-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  }
+]

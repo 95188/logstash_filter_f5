@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "=net-f5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "=net-f5",
+      "hits": 0,
+      "description": "An overview of F5 BIG-IP Load Balancer logs",
+      "panelsJSON": "[{\"panelIndex\":\"2\",\"gridData\":{\"x\":4,\"y\":6,\"w\":5,\"h\":3,\"i\":\"2\"},\"id\":\"net-f5-program-datehistogram\",\"title\":\"F5 Program Datehistogram\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":4,\"y\":0,\"w\":5,\"h\":3,\"i\":\"4\"},\"id\":\"net-f5-hostname-datehistogram\",\"title\":\"F5 Hostnames Datehistogram\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":4,\"y\":3,\"w\":5,\"h\":3,\"i\":\"7\"},\"id\":\"net-f5-severity-datehistogram\",\"title\":\"F5 Severity Datehistogram\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":0,\"y\":2,\"w\":4,\"h\":3,\"i\":\"8\"},\"id\":\"net-f5-tags-datehistogram\",\"title\":\"F5 Tags\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":0,\"y\":9,\"w\":12,\"h\":5,\"i\":\"9\"},\"columns\":[\"syslog_hostname\",\"syslog_program\",\"syslog_severity\",\"f5_session_id\",\"tags\",\"syslog_message\"],\"id\":\"net-f5\",\"sort\":[\"@timestamp\",\"desc\"],\"title\":\"F5 Saved Search\",\"type\":\"search\",\"version\":\"6.1.1\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":0,\"y\":0,\"w\":4,\"h\":2,\"i\":\"12\"},\"id\":\"net-f5-home-table-markdown\",\"title\":\"F5 Menu\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":9,\"y\":6,\"w\":3,\"h\":3,\"i\":\"13\"},\"id\":\"net-f5-program-donut\",\"title\":\"F5 Program Donut\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":9,\"y\":3,\"w\":3,\"h\":3,\"i\":\"14\"},\"id\":\"net-f5-severity-donut\",\"title\":\"F5 Severity Donut\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":9,\"y\":0,\"w\":3,\"h\":3,\"i\":\"15\"},\"id\":\"net-f5-hostname-donut\",\"title\":\"F5 Hostname Donut\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"17\",\"gridData\":{\"x\":0,\"y\":5,\"w\":4,\"h\":4,\"i\":\"17\"},\"id\":\"net-f5-tags-donut\",\"title\":\"F5 Tags Donut\",\"type\":\"visualization\",\"version\":\"6.1.1\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+      "uiStateJSON": "{\"P-11\":{\"vis\":{\"legendOpen\":false}},\"P-13\":{\"vis\":{\"legendOpen\":false}},\"P-14\":{\"vis\":{\"legendOpen\":false}},\"P-17\":{\"vis\":{\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-1h",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"match_all\":{}}}}"
+      }
+    }
+  }
+]
